@@ -1,3 +1,5 @@
+一般的适应拓扑变化的方案是多智能体强化学习，类似于Q-Routing方案，这类方案本身就没有拓扑的完整信息，每一个智能体通过局部信息来判断当前最优决策。这类方案的缺点在于局部最优不一定是全局最优，部署困难开销较大等。
+
 论文Deep Reinforcement Learning meets Graph Neural Networks: An optical network routing use case中给出了DRL+GNN的方案。该方案使用DQN算法，Q值网络由GNN建模。
      state:当前网络状态（原文中以OTN网络为例），流量需求<src, dst, bandwidth>
      action：当前流量的路由策略
